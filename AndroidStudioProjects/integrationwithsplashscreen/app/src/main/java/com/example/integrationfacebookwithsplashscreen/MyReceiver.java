@@ -9,7 +9,6 @@ public class MyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String status = NetworkUtil.getConnectivityStatusString(context);
-        Log.d("testing",status);
         if(status.isEmpty()) {
             status="No Internet Connection";
         }
