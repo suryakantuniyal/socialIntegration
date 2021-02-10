@@ -25,7 +25,6 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 Uri screenshotUri = Uri.parse("android resource://comexample.integrationwithspashscreen*");
-                Log.d("testing","testing");
 
                 try {
                     InputStream stream = getContentResolver().openInputStream(screenshotUri);
