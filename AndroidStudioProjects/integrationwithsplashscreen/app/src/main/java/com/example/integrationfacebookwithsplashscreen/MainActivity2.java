@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -24,6 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 Uri screenshotUri = Uri.parse("android resource://comexample.integrationwithspashscreen*");
+                Log.d("testing","testing");
 
                 try {
                     InputStream stream = getContentResolver().openInputStream(screenshotUri);
